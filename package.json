@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/natlogica/garden-site#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "axios": "^0.26.0"
   }
 }
