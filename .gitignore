@@ -1,5 +1,18 @@
 # General
 .DS_Store
+.nova
+.obsidian
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artefacts
+public
+
+# dotenv environment variables file
+.env
+.env.test
 
 # Logs
 logs
@@ -40,10 +53,6 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules/
-jspm_packages/
-
 # TypeScript v1 declaration files
 typings/
 
@@ -71,10 +80,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-.env.test
-
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
@@ -87,9 +92,6 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
 
 # vuepress build output
 .vuepress/dist
