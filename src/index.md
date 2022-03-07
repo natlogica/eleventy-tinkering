@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Hello World
 templateEngineOverride: njk,md
 ---
@@ -11,6 +11,10 @@ I am starting with the tutorial at https://www.youtube.com/watch?v=2By887u7b0A
 
 {% include "notelist.njk" %}
 
-## Cat of the Day
+## Cat of the Day for {{ page.date.toDateString() }}
 
 <img src="{{ catpic }}" />
+
+{% for page in collections.pages %}
+[{{ page.data.title }}]({{ page.url }})
+{% endfor %}
