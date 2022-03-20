@@ -1,9 +1,23 @@
 ---
 layout: base.njk
 ---
+<header>
+<h1>{{ site.title }}</h1>
+</header>
+<nav>
+	<ul>
+		{% for item in nav.items %}
+			<li><a href="{{ item.url }}"
+				{% if item.url === page.url %}
+					aria-current="page" data-state="active"
+				{% endif %}
+				>{{ item.name }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
+
+<p>Published on: {{ page.date.toDateString() }}</p>
 
 {{ content | safe }}
 
-<footer>
-	<p>Published on: {{ page.date.toDateString() }}</p>
-</footer>
