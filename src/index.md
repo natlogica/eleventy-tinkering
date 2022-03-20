@@ -1,8 +1,7 @@
 ---
 title: My First Eleventy Page!
-date: Last Modified
 layout: page.njk
-templateEngineOverride: njk,md
+date: Last Modified
 ---
 
 Starting from scratch, this is my first page in the site.

@@ -5,7 +5,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toLocaleString(
+      DateTime.DATE_MED
+    );
   });
 
   eleventyConfig.addFilter("randomItem", (arr) => {
