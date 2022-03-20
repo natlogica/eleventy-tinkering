@@ -5,3 +5,10 @@ body {
 img {
   width: 150px;
 }
+
+aside {
+  border-color: #cd2626;
+  border-style: dashed;
+  font-style: italic;
+  padding: 2em;
+}

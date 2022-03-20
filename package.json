@@ -22,5 +22,8 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "axios": "^0.26.0"
+  },
+  "devDependencies": {
+    "luxon": "^2.3.1"
   }
 }

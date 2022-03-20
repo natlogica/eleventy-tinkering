@@ -1,5 +1,6 @@
 {
   "layout": "page",
   "tags": "pages",
-  "permalink": "/{{ title | slug }}/"
+  "permalink": "/{{ title | slug }}/",
+  "templateEngineOverride": "njk,md"
 }
