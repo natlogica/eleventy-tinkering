@@ -1,12 +1,17 @@
 ---
 layout: base.njk
 ---
-{% include "notelist.njk" %}
+
+{% include "header.njk" %}
 
 <article>
 {{ content | safe }}
 </article>
 
-<footer>
+<aside>
+{% include "notelist.njk" %}
+</aside>
 
+<footer>
+<p>Created on {{ page.date | asPostDate }} - Last updated {{ modified | asPostDate }}</p>
 </footer>

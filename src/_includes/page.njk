@@ -1,21 +1,8 @@
 ---
 layout: base.njk
 ---
-<header>
-	<h2>{{ title }}</h2>
-</header>
-<nav>
-	<ul>
-		{% for item in nav.items %}
-			<li><a href="{{ item.url }}"
-				{% if item.url === page.url %}
-					aria-current="page" data-state="active"
-				{% endif %}
-				>{{ item.name }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-</nav>
+{% include "header.njk" %}
 
 {{ content | safe }}
 
+{% include "footer.njk" %}

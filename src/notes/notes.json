@@ -1,5 +1,5 @@
 {
   "layout": "note",
-  "permalink": "/{{ page.fileSlug }}/",
-  "tags": "notes"
+  "tags": "notes",
+  "permalink": "/{{ page.fileSlug }}/"
 }
