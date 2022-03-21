@@ -1,0 +1,4 @@
+Sitemap: https://notes.natlogi.ca/sitemap.xml
+
+User-agent: *
+Disallow:

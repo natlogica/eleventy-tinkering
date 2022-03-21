@@ -3,6 +3,7 @@
 .nova
 .obsidian
 snippets.md
+src/notes/Templates
 
 # Dependency directories
 node_modules/
