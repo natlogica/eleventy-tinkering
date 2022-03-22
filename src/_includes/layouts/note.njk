@@ -2,17 +2,18 @@
 layout: base.njk
 ---
 
-{% include "header.njk" %}
+{% include "partials/header.njk" %}
 
 <article>
 {{ content | safe }}
 </article>
+{% include "partials/backlinks.njk" %}
 
 <aside>
-{% include "notelist.njk" %}
+{% include "partials/notelist.njk" %}
 </aside>
 
 <footer>
 <p>Created on {{ page.date | asPostDate }} - Last updated {{ modified | asPostDate }}</p>
-<p>&copy;{% year %} Natalie Funk</p>
+<p>&copy;{% year %} {{ site.authorName }}</p>
 </footer>

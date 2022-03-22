@@ -1,0 +1,28 @@
+{# This page adapted from binyamin's eleventy-garden #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		{% include "partials/head.njk" %}
+</head>
+<body>
+		<header class="page-header">
+				<a href="/" class="page-header__logo" title="Go home">
+						<img src="/icons/avatar.png" alt="" width="48">
+				</a>
+
+				<nav>
+						<a href="/">Home</a>
+						<a href="/about">About Me</a>
+						<a href="/notes">Notes</a>
+				</nav>
+		</header>
+		<main>
+				{{ content }}
+		</main>
+		
+		<footer class="page-footer">
+				<small>Copyright {{ site.authorName }}</small>
+		</footer>
+</body>
+</html>
