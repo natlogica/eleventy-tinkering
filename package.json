@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-tinkering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --watch --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natlogica/eleventy-tinkering.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natlogica/eleventy-tinkering/issues"
+  },
+  "homepage": "https://github.com/natlogica/eleventy-tinkering#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
